@@ -8,7 +8,7 @@ function Scene() {
   return (
     <>
       <ambientLight position={[10, 10, 10]} />
-      <primitive object={gltf.scene} scale={0.1} />;
+      <primitive position={[0, -2, 0]} object={gltf.scene} scale={0.1} />;
     </>
   );
 }
