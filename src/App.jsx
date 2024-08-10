@@ -2,10 +2,9 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import "./App.css";
-import sceneGLTF from "./assets/scene.gltf";
 
 function Scene() {
-  const gltf = useGLTF(sceneGLTF);
+  const gltf = useGLTF("src/assets/scene.gltf");
   return (
     <>
       <ambientLight position={[10, 10, 10]} />
