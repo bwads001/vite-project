@@ -24,7 +24,6 @@ export default [
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
       prettier,
-
     },
     rules: {
       ...js.configs.recommended.rules,
@@ -34,12 +33,11 @@ export default [
       ...prettier.configs.recommended.rules,
       "prettier/prettier": "warn",
       "react/jsx-no-target-blank": "off",
-      "react/no-unknown-property": [1, { "ignore": ["position"] }],
+      "react/no-unknown-property": [1, { ignore: ["position", "object"] }],
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true },
       ],
     },
-  
   },
 ];
