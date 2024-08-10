@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import "./App.css";
 
 function Scene() {
-  const gltf = useGLTF("src/assets/scene.gltf");
+  const gltf = useGLTF("/scene.gltf");
   return (
     <>
       <ambientLight position={[10, 10, 10]} />
